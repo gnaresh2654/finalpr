@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project - Comprehensive Web Application">
+    <meta name="theme-color" content="#2c3e50">
+    <title>FinalPR - Web Application</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/optimize.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="script" href="src/js/script.js">
+    <link rel="preload" as="style" href="src/css/styles.css">
+    
+    <!-- Prefetch Non-Critical Resources -->
+    <link rel="prefetch" href="src/js/utils.js">
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- Navigation -->
+        <nav class="navbar" role="navigation" aria-label="main">
+            <div class="navbar-container">
+                <a href="#" class="navbar-brand">FinalPR</a>
+                <button class="navbar-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header/Hero Section -->
+        <header id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Final Project</h1>
+                <p class="hero-subtitle">Comprehensive Web Application with Performance Optimization</p>
+                <button class="btn btn-primary" id="cta-btn">Get Started</button>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Performance</h3>
+                    <p>Optimized for speed with lazy loading and minified assets</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Responsive</h3>
+                    <p>Works seamlessly on all devices and screen sizes</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Compatible</h3>
+                    <p>Tested across all major browsers and platforms</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Accessible</h3>
+                    <p>WCAG compliant with full keyboard navigation</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About This Project</h2>
+            <p>This is a capstone project demonstrating advanced web development skills with focus on performance optimization and cross-browser compatibility.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <form id="contactForm" class="contact-form" novalidate>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 FinalPR. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script defer src="src/js/optimize.js"></script>
+    <script defer src="src/js/script.js"></script>
+    
+    <!-- Inline Critical JS -->
+    <script>
+        // Prevent FOUC (Flash of Unstyled Content)
+        document.documentElement.className = 'js-enabled';
+    </script>
+</body>
+</html>
